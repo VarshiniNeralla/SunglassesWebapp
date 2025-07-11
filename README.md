@@ -6,6 +6,14 @@ A fun and beginner-friendly computer vision project using **Flask** and **OpenCV
 
 ---
 
+## 🌐 Live Demo
+
+🚀 Try it here: [https://b6fb11c472d0.ngrok-free.app](https://b6fb11c472d0.ngrok-free.app)
+
+> Note: This link works only while this Flask app is running locally and Ngrok tunnel is active.
+
+---
+
 ## 🚀 Features
 
 - 🖼️ Real-time face detection using Haar Cascades
