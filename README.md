@@ -13,6 +13,14 @@ A fun and beginner-friendly computer vision project using **Flask** and **OpenCV
 > Note: This link works only while this Flask app is running locally and Ngrok tunnel is active.
 
 ---
+**Want to Share It Online?**
+> Use Ngrok to create a public link:
+
+**ngrok http 5000**
+
+> Then share the link like this one:
+**https://b6fb11c472d0.ngrok-free.app**
+
 
 ## 🚀 Features
 
