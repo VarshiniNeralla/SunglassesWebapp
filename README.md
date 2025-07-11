@@ -22,13 +22,7 @@ A fun and beginner-friendly computer vision project using **Flask** and **OpenCV
 - **Flask**
 - **OpenCV (cv2)**
 - **HTML/CSS**
-- *(Optional: Render for deployment)*
-
 ---
-
-
----
-
 ## ⚙️ Getting Started (Local Setup)
 
 ### 1️⃣ Clone the Repository
