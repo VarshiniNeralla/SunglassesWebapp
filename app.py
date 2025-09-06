@@ -1,14 +1,10 @@
 from flask import Flask, render_template, Response, request
 import cv2
 import numpy as np
-
 app = Flask(__name__)
-
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 sunglasses = cv2.imread('static/sunglasses.png', cv2.IMREAD_UNCHANGED)
-
 filter_enabled = True 
-
 def overlay_filter(frame):
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     faces = face_cascade.detectMultiScale(gray, 1.3, 5)
