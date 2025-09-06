@@ -8,20 +8,16 @@ filter_enabled = True
 def overlay_filter(frame):
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     faces = face_cascade.detectMultiScale(gray, 1.3, 5)
-
     for (x, y, w, h) in faces:
         sunglass_width = w
         sunglass_height = int(sunglasses.shape[0] * sunglass_width / sunglasses.shape[1])
         resized_sunglasses = cv2.resize(sunglasses, (sunglass_width, sunglass_height))
-
         y1 = y + int(h / 4)
         y2 = y1 + sunglass_height
         x1 = x
         x2 = x1 + sunglass_width
-
         if y2 > frame.shape[0] or x2 > frame.shape[1]:
             continue
-
         if resized_sunglasses.shape[2] == 4:
             alpha_s = resized_sunglasses[:, :, 3] / 255.0
             alpha_l = 1.0 - alpha_s
